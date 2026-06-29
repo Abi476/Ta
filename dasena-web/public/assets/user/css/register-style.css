@@ -1,0 +1,200 @@
+/* Reset & Base */
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8fafc;
+}
+
+/* Layout Split Screen */
+.dasena-layout {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+/* Logo Melayang */
+.floating-banner {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffffff;
+    padding: 12px 35px;
+    border-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.floating-banner img {
+    max-height: 45px; 
+    width: auto;
+}
+
+/* Branding Merah Damkar */
+.panel-left {
+    flex: 1.2;
+    background: linear-gradient(135deg, #e53935 0%, #b71c1c 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8%;
+    position: relative;
+    z-index: 1;
+}
+
+.branding-content {
+    max-width: 500px;
+    margin-top: -50px;
+}
+
+.branding-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.branding-desc {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #ffebee;
+}
+
+/* Form Putih */
+.panel-right {
+    flex: 1;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Transisi Gelombang */
+.cloud-divider {
+    position: absolute;
+    right: 99.5%;
+    top: 0;
+    height: 100%;
+    width: 140px;
+    pointer-events: none;
+    z-index: 2;
+}
+
+/* Styling Form */
+.form-wrapper {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px;
+}
+
+.form-title {
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.input-group-custom {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.input-group-custom label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #475569;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Garis bawah */
+.input-custom {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #cbd5e1;
+    border-radius: 0;
+    padding: 8px 0;
+    background: transparent;
+    font-size: 1rem;
+    color: #0f172a;
+    transition: all 0.3s ease;
+}
+
+.input-custom:focus {
+    outline: none;
+    border-bottom-color: #d32f2f;
+    box-shadow: none;
+}
+
+/* Action Buttons */
+.form-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+/* Styling Tombol Register */
+.btn-register {
+    background-color: #d32f2f;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 0;
+    width: 150px; 
+    font-weight: 600;
+    border: none;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(211, 47, 47, 0.3);
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn-register:hover {
+    background-color: #b71c1c;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(183, 28, 28, 0.4);
+}
+
+.text-link {
+    color: #64748b;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+.text-link:hover {
+    color: #334155;
+    text-decoration: underline;
+}
+
+/* Footer Copyright */
+.footer-text {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #94a3b8;
+}
+
+/* Responsif Layar HP */
+@media (max-width: 991.98px) {
+    .dasena-layout { flex-direction: column; }
+    .panel-left { flex: none; padding: 130px 20px 50px; text-align: center; }
+    .branding-content { margin: 0 auto; }
+    .cloud-divider { display: none; }
+    .panel-right { border-top-left-radius: 30px; border-top-right-radius: 30px; margin-top: -30px; padding-top: 40px; padding-bottom: 80px; }
+    .footer-text { bottom: 10px; }
+}
