@@ -1,0 +1,11 @@
+{{-- <section class="clients-logo-section pt-100 pb-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="client-logo wow fadeInUp" data-wow-delay=".2s">
+          <img src="{{ asset('assets/user/img/clients/brands.svg') }}" alt="" class="w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+</section> --}}
